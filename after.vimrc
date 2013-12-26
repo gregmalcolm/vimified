@@ -27,3 +27,6 @@ inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <Esc>:NERDTreeToggle<CR>i
+
+" Need this mapping for buffer switching
+nunmap <C-i>
