@@ -19,14 +19,16 @@ set mouse=a
 
 nmap <C-m> :set ttymouse=xterm2<cr>
 
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <Esc>:NERDTreeToggle<CR>i
 
 " Need this mapping for buffer switching
 nunmap <C-i>
+
+map <F3> :w !pbcopy<CR><CR>
+map "*y :w !pbcopy<CR><CR>
+
+map <F4> :r !pbpaste<CR>
+map "*p :r !pbpaste<CR>
+
+map <F6> :CtrlPClearAllCaches<CR>
